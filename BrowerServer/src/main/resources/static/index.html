@@ -1,0 +1,31 @@
+<!-- src/main/resources/static/index.html -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人通讯录系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+    <h1>个人通讯录</h1>
+    <div class="form">
+        <input v-model="contact.name" placeholder="姓名">
+        <input v-model="contact.address" placeholder="地址">
+        <input v-model="contact.phone" placeholder="电话">
+        <button @click="saveContact">{{ editing ? '更新' : '添加' }}</button>
+    </div>
+    <ul class="contact-list">
+        <li v-for="contact in contacts" :key="contact.id">
+            {{ contact.name }} - {{ contact.phone }}
+            <button @click="editContact(contact)">编辑</button>
+            <button @click="deleteContact(contact.id)">删除</button>
+        </li>
+    </ul>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
