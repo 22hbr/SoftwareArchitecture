@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ClientServer.iml" filepath="$PROJECT_DIR$/ClientServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DoubleLayerCS/DoubleLayerCS.iml" filepath="$PROJECT_DIR$/DoubleLayerCS/DoubleLayerCS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThreeLayerCS/ThreeLayerCS.iml" filepath="$PROJECT_DIR$/ThreeLayerCS/ThreeLayerCS.iml" />
+    </modules>
+  </component>
+</project>
